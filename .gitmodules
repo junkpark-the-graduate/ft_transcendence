@@ -1,0 +1,10 @@
+[submodule "back"]
+	path = back
+	url = git@github.com:junkpark-the-graduate/ft_transcendence_back.git
+[submodule "front"]
+	path = front
+	url = git@github.com:junkpark-the-graduate/ft_transcendence_front.git
+[submodule "config"]
+	path = config
+	url = git@github.com:junkpark-the-graduate/submodule.git
+	

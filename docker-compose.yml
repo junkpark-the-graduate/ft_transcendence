@@ -1,7 +1,5 @@
 version: "3"
 
-# TODO: volumes 필요한지 확인하기
-
 services:
   db:
     image: postgres:latest
@@ -16,7 +14,7 @@ services:
     container_name: front
     restart: always
     build:
-      context: ../front
+      context: front
     image: front
     ports:
       - ${FRONTEND_PORT}:${FRONTEND_PORT}
@@ -29,7 +27,7 @@ services:
     container_name: back
     restart: always
     build:
-      context: ../back
+      context: back
     image: back
     environment:
       - BACKEND_PORT=${BACKEND_PORT}

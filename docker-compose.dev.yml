@@ -3,18 +3,18 @@ version: "3"
 services:
   db:
     env_file:
-      - .env.dev
+      - submodule/.env.dev
     ports:
       - ${DB_PORT}:${DB_PORT}
 
   front:
     env_file:
-      - .env.dev
-    volumes:
-      - ../front:/app
+      - submodule/.env.dev
+    #volumes:
+    #  - ../front:/app
 
   back:
     env_file:
-      - .env.dev
-    volumes:
-      - ../back:/app
+      - submodule/.env.dev
+    #volumes:
+    #  - ../back:/app
